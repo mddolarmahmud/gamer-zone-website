@@ -32,11 +32,12 @@ a {
 .span {
 	color: rgb(243, 9, 68);
 }
+
 /* bannar section  */
 .bannar-container {
 	display: flex;
-	justify-content: space-around;
-	margin: 50px 50px;
+	justify-content: space-between;
+	margin: 50px 250px;
 	align-items: center;
 }
 .bannar-container > h1 {
@@ -66,4 +67,21 @@ a {
 	background-color: #337f92;
 	border: 0;
 	margin-left: 10px;
+}
+.bannar-image > img {
+	width: 100%;
+	width: 600px;
+	height: auto;
+}
+
+/* responsive website  */
+@media screen and (max-width: 576px) {
+	.nav-container,
+	.bannar-container {
+		flex-direction: column;
+	}
+	.bannar-image > img {
+		width: 400px;
+		margin-top: 30px;
+	}
 }
