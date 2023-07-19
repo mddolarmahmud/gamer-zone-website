@@ -1,0 +1,31 @@
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 100px;
+	align-items: center;
+	background-color: rgb(243, 243, 243);
+}
+.frame {
+	display: flex;
+	font-size: 25px;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.flex-nav {
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+}
+.flex-nav,
+a {
+	text-decoration: none;
+	gap: 20px;
+	font-size: 18px;
+	color: rgb(22, 21, 21);
+}
+.icon {
+	background-color: rgb(219, 219, 219);
+	padding: 10px;
+	border-radius: 5px;
+}
