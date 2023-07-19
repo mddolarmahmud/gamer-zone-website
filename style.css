@@ -79,19 +79,33 @@ a {
 }
 
 /* online-game section */
+.online-game {
+	text-align: center;
+	margin: 130px 200px;
+}
 .card-image {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.card {
+	width: 350px;
+	align-items: center;
 }
 
 /* responsive website  */
 @media screen and (max-width: 576px) {
 	.nav-container,
-	.bannar-container {
+	.bannar-container,
+	.card-image {
 		flex-direction: column;
 	}
 	.bannar-image > img {
 		width: 400px;
 		margin-top: 30px;
+	}
+	.online-game {
+		margin: 10px 50px;
 	}
 }
