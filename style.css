@@ -94,6 +94,30 @@ a {
 	align-items: center;
 }
 
+/* play-instantly */
+.play-Instantly {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10px 250px;
+}
+.play-description {
+	width: 250px;
+	font-size: 20px;
+}
+.play-image > img {
+	width: 500px;
+}
+.mini-fither {
+	width: 400px;
+	margin: 0 auto;
+}
+.mini-fither > img {
+	width: 250px;
+	margin-top: -250px;
+	margin-left: 100px;
+}
+
 /* responsive website  */
 @media screen and (max-width: 576px) {
 	.nav-container,
@@ -103,9 +127,9 @@ a {
 	}
 	.bannar-image > img {
 		width: 400px;
-		margin-top: 30px;
+		margin-top: 30px 20px;
 	}
 	.online-game {
-		margin: 10px 50px;
+		margin: 10px 60px;
 	}
 }
