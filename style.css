@@ -1,3 +1,6 @@
+/* * {
+	margin: 0;
+} */
 .nav-container {
 	display: flex;
 	justify-content: space-between;
@@ -14,8 +17,10 @@
 }
 .flex-nav {
 	display: flex;
-	list-style-type: none;
+	list-style: none;
+	justify-content: center;
 	align-items: center;
+	margin-right: 100px;
 }
 .flex-nav,
 a {
@@ -25,9 +30,13 @@ a {
 	color: rgb(22, 21, 21);
 }
 .icon {
-	background-color: rgb(219, 219, 219);
-	padding: 10px;
-	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(170, 164, 164);
+	padding: 5px;
+	width: 200px;
+	border-radius: 10px;
 }
 .span {
 	color: rgb(243, 9, 68);
@@ -43,6 +52,9 @@ a {
 .bannar-container > h1 {
 	font-size: 30px;
 }
+.bannar-description > p > i {
+	font-size: 22px;
+}
 
 .goat {
 	font-size: 5rem;
@@ -50,21 +62,23 @@ a {
 	color: rgb(196, 78, 231);
 }
 .btn-primary {
-	padding: 12px;
+	padding: 15px;
 	width: 120px;
 	border-radius: 20px;
 	color: white;
 	background-color: rgb(243, 9, 68);
 	border: 0;
+	cursor: pointer;
 }
 .btn-secondary {
-	padding: 12px;
+	padding: 15px;
 	width: 150px;
 	border-radius: 20px;
 	color: white;
 	background-color: #337f92;
 	border: 0;
 	margin-left: 10px;
+	cursor: pointer;
 }
 .bannar-image > img {
 	width: 100%;
@@ -172,7 +186,8 @@ i {
 	.nav-container,
 	.bannar-container,
 	.card-image,
-	.play-Instantly {
+	.play-Instantly,
+	.flex-nav {
 		flex-direction: column;
 	}
 	.bannar-image > img {
@@ -190,6 +205,9 @@ i {
 		margin-top: -120px;
 		margin-left: 10px;
 	}
+	.play-image {
+		margin-top: 30px;
+	}
 
 	.container {
 		grid-template-columns: repeat(2, 200px);
@@ -198,5 +216,6 @@ i {
 	.list-items {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
 	}
 }
