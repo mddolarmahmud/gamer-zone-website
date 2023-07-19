@@ -118,11 +118,34 @@ a {
 	margin-left: 100px;
 }
 
+.flex-image {
+	display: flex;
+	gap: 10px;
+	/* border: 1px solid palevioletred; */
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	border-radius: 25px;
+}
+.flex-image:hover {
+	background-color: rgb(105, 100, 100);
+	color: rgb(224, 214, 214);
+	cursor: pointer;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 200px);
+	gap: 50px;
+	margin: 100px auto;
+	width: 1000px;
+}
 /* responsive website  */
 @media screen and (max-width: 576px) {
 	.nav-container,
 	.bannar-container,
-	.card-image {
+	.card-image,
+	.play-Instantly {
 		flex-direction: column;
 	}
 	.bannar-image > img {
@@ -131,5 +154,18 @@ a {
 	}
 	.online-game {
 		margin: 10px 60px;
+	}
+	.play-image > img {
+		width: 320px;
+	}
+	.mini-fither img {
+		width: 150px;
+		margin-top: -120px;
+		margin-left: 10px;
+	}
+
+	.container {
+		grid-template-columns: repeat(2, 200px);
+		margin: 30px 20px;
 	}
 }
