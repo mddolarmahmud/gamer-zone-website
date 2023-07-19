@@ -7,7 +7,7 @@
 }
 .frame {
 	display: flex;
-	font-size: 25px;
+	font-size: 30px;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
@@ -28,4 +28,42 @@ a {
 	background-color: rgb(219, 219, 219);
 	padding: 10px;
 	border-radius: 5px;
+}
+.span {
+	color: rgb(243, 9, 68);
+}
+/* bannar section  */
+.bannar-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 50px 50px;
+	align-items: center;
+}
+.bannar-container > h1 {
+	font-size: 30px;
+}
+.bannar-description > p {
+	color: rgb(49, 48, 48);
+}
+.goat {
+	font-size: 5rem;
+	margin: 1px auto;
+	color: rgb(196, 78, 231);
+}
+.btn-primary {
+	padding: 12px;
+	width: 120px;
+	border-radius: 20px;
+	color: white;
+	background-color: rgb(243, 9, 68);
+	border: 0;
+}
+.btn-secondary {
+	padding: 12px;
+	width: 150px;
+	border-radius: 20px;
+	color: white;
+	background-color: #337f92;
+	border: 0;
+	margin-left: 10px;
 }
