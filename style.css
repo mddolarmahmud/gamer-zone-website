@@ -43,9 +43,7 @@ a {
 .bannar-container > h1 {
 	font-size: 30px;
 }
-.bannar-description > p {
-	color: rgb(49, 48, 48);
-}
+
 .goat {
 	font-size: 5rem;
 	margin: 1px auto;
@@ -72,6 +70,18 @@ a {
 	width: 100%;
 	width: 600px;
 	height: auto;
+}
+
+/* shared or multipul property  */
+.light-color {
+	color: rgb(49, 48, 48);
+	font-size: 18px;
+}
+
+/* online-game section */
+.card-image {
+	display: flex;
+	justify-content: space-around;
 }
 
 /* responsive website  */
